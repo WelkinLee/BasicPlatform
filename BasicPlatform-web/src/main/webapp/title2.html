@@ -1,0 +1,41 @@
+<style type="text/css">
+    #title{
+        width:100%;
+        text-align: center;
+        font-size: 30px;
+        background-image: url("images/header_bg.jpg");
+        height: 68px;
+        line-height: 68px;
+    }
+
+    #userInfo{
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        font-size: 14px;
+        /*display: none;*/
+    }
+
+
+    #userInfo div{
+        float: left;
+    }
+    #userNameDiv
+    {
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: blue !important;
+    }
+
+</style>
+
+<div id="title"><a href="portal.jsp">图书管理系统</a></div>
+<div id="userInfo">
+    <div>欢迎您，游客</div>
+    <div id="userRegDiv"><a href="register.html">|注册</a></div>
+    <div id="userLoginDiv"><a href="index.jsp">|登录</a></div>
+    <div id="logoutDiv">|<a href="logout">安全退出</a></div>
+</div>
+

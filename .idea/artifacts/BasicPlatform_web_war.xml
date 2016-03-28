@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BasicPlatform-web:war">
+    <output-path>$PROJECT_DIR$/BasicPlatform-web/target</output-path>
+    <root id="archive" name="BasicPlatform-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="BasicPlatform-web:war exploded" />
+    </root>
+  </artifact>
+</component>
