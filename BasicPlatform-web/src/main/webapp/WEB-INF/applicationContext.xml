@@ -12,17 +12,17 @@
     <!-- 使用annotation定义事务 -->
     <tx:annotation-driven transaction-manager="transactionManager"
                           proxy-target-class="false" />
-    <context:component-scan base-package="/"></context:component-scan>
+    <context:component-scan base-package="fundamental"></context:component-scan>
     <context:annotation-config />
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="basicplatform" />
-        <property name="typeAliasesPackage" value="org.bookManageSystem.fundamental,org.bookManageSystem.business" />
+        <property name="typeAliasesPackage" value="fundamental.security" />
     </bean>
 
     <bean id="mappers" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage"
-                  value="org.bookManageSystem.fundamental,org.bookManageSystem.business" />
+                  value="fundamental.security"/>
     </bean>
     <import resource="applicationContext-security.xml"/>
 </beans>

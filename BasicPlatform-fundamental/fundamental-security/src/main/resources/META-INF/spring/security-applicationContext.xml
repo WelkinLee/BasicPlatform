@@ -2,10 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="userService" class="security.service.UserService" depends-on="mappers"/>
-    <bean id="userAuthorityService" class="security.service.UserAuthorityService" depends-on="mappers"/>
-    <bean id="authorityPowerService" class="security.service.AuthorityPowerService" depends-on="mappers"/>
-    <bean id="powerService" class="security.service.PowerService" depends-on="mappers"/>
-    <bean id="authorityService" class="security.service.AuthorityService" depends-on="mappers"/>
-    <bean id="appService" class="security.service.AppService" depends-on="mappers"/>
+    <bean id="userService" class="fundamental.security.service.UserService" depends-on="mappers"/>
+    <bean id="userAuthorityService" class="fundamental.security.service.UserAuthorityService" depends-on="mappers"/>
+    <bean id="authorityPowerService" class="fundamental.security.service.AuthorityPowerService" depends-on="mappers"/>
+    <bean id="powerService" class="fundamental.security.service.PowerService" depends-on="mappers"/>
+    <bean id="authorityService" class="fundamental.security.service.AuthorityService" depends-on="mappers"/>
+    <bean id="appService" class="fundamental.security.service.AppService" depends-on="mappers"/>
 </beans>

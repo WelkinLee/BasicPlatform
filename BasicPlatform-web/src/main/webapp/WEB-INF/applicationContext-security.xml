@@ -22,7 +22,7 @@
 
     <!-- 配置过滤器 -->
     <beans:bean id="myFilter"
-                class="security.MySecurityInterceptorFilter">
+                class="fundamental.security.MySecurityInterceptorFilter">
         <!-- 用户拥有的权限 -->
         <beans:property name="authenticationManager" ref="authenticationManager" />
         <!-- 用户是否拥有所请求资源的权限 -->
@@ -32,11 +32,11 @@
     </beans:bean>
 
     <beans:bean id="myAccessDecisionManager"
-                class="security.MyAccessDecisionManager">
+                class="fundamental.security.MyAccessDecisionManager">
     </beans:bean>
     <!-- 系统运行时加载 系统要拦截的资源   与用户请求时要过滤的资源 -->
     <beans:bean id="mySecurityMetadataSource"
-                class="security.MySecurityMetadataSource"
+                class="fundamental.security.MySecurityMetadataSource"
             >
     </beans:bean>
 
@@ -52,5 +52,5 @@
         </authentication-provider>
     </authentication-manager>
 
-    <beans:bean id="myUserDeatailsService" class="security.MyUserDetailsService"/>
+    <beans:bean id="myUserDeatailsService" class="fundamental.security.MyUserDetailsService"/>
 </beans:beans>
